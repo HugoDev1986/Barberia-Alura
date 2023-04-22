@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=IBM+Plex+Mono:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* navbar principal */
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.header .logo {
+  cursor: pointer;
+  padding-left: -px;
+}
+
+.header .logo img {
+  width: 40%;
+  height: auto;
+  transition: all 0.3s;
+}
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+.header .nav-links li:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links li a:hover {
+  color: rgb(239, 239, 12);
+}
+.header .btn button {
+  font-weight: 700;
+  color: black;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.header .btn button:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: rgb(239, 239, 12);
+}
+
+/* seccion banner principal*/
+
+.banner img {
+  position: relative;
+  width: 100%;
+  margin: 0 0;
+}
+.banner h1 {
+  position: absolute;
+  left: 19%;
+  top: 45%;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(219, 230, 231);
+}
+
+/* seccion quienes somos*/
+
+.QuienesSomos {
+  text-align: center;
+  margin: 0px 0px;
+  padding: 80px;
+  padding-bottom: 100px;
+  background-color: black;
+}
+.QuienesSomos h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 45px;
+  margin: 50px;
+  font-weight: 700;
+}
+.QuienesSomos p {
+  color: white;
+}
+
+/* seccion diferenciales*/
+.izquierda {
+  background: #ccc;
+  height: 70vh;
+  width: 50%;
+  padding: 100px 50px;
+}
+.derecha {
+  background: url(./IMG/diferenciales.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 70vh;
+}
+.pantalla-dividida {
+  display: flex;
+}
+.nuestras {
+  color: white;
+}
+.pantalla-dividida h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.pantalla-dividida ul {
+  font-size: 16px;
+  top: 50%;
+  margin-bottom: 30px;
+}
+.pantalla-dividida .items {
+  padding: 8px;
+}
+.pantalla-dividida button {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: black;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.pantalla-dividida button:hover {
+  transform: scale(1.1);
+  background-color: yellow;
+  color: white;
+}
+
+/* Seccion servicios*/
+
+.servicios {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 100px ;
+}
+.servicios h2 {
+  position: absolute;
+  font-size: 45px;
+  text-align: center;
+  left: 35%;
+  margin: 0px;
+  font-weight: 700;
+}
+.servicios h3{
+    font-size: 20px;
+}
+.servicios .servicio {
+  padding: 50px;
+  margin: 100px 30px;
+  border: none;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.5);
+  border-radius: 32px;
+  transition: all 0.4s;
+}
+.servicios .servicio:hover {
+  transform: scale(1.1);
+}
+.servicios p {
+  margin: 25px 0;
+}
+
+/* Fomulario de contacto*/
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.formulario {
+  padding: 50px;
+}
+.formulario-container {
+  background-color: black;
+}
+
+form div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4d90fe;
+}
+
+form button[type="submit"] {
+  font-weight: 700;
+  color: black;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+form button[type="submit"]:hover {
+  transform: scale(1.2);
+  background: yellow;
+}
+.titulo-contacto {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.footer {
+  position: relative;
+  background-color: black;
+  padding: 50px;
+  margin: 1px 0px;
+  text-align: center;
+  font-size: 20px;
+}
+.links {
+  list-style: none;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links li:hover {
+  transform: scale(1.1);
+}
+.links li a:hover {
+  transform: scale(1.1);
+  color: yellow;
+}
+.botonArriba {
+  position: absolute;
+  left: 80%;
+}
+.logo-footer {
+  width: 80px;
+  height: auto;
+}

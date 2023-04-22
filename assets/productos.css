@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.header-productos {
+  background: #ccc;
+}
+.header-productos .logo-productos {
+  text-align: center;
+  transition: all 1s;
+}
+.header-productos .logo-productos:hover{
+    transform: scale(1.2);
+}
+
+.productos-items {
+  width: 940px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+.productos-items li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.5);
+  transition: all 0.4s;
+}
+.productos-items li:hover{
+    transform: scale(1.1);
+    opacity: 0.6;    
+}
+.productos-items h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.producto-descripcion {
+  font-size: 18px;
+}
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.footer {
+    position: relative;
+    background-color: black;
+    padding: 50px;
+    margin: 1px 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .links {
+    list-style: none;
+  }
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+  .links li:hover {
+    transform: scale(1.1);
+  }
+  .links li a:hover {
+    transform: scale(1.1);
+    color: yellow;
+  }
+  
+  
+  .logo-footer {
+    width: 80px;
+    height: auto;
+  }
+
